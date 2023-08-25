@@ -7,7 +7,7 @@ export default function Navbar(props) {
 return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
     <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="#">
         {props.title}
         </a>
         <button
@@ -28,15 +28,15 @@ return (
         </li>
             </div>
             <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/">
+            <a className="nav-link active" aria-current="page" href="#">
                 Home
             </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
             <a className="nav-link" href="/">
                 {props.about}
             </a>
-            </li>
+            </li> */}
         </ul>
         <form className="d-flex" role="search">
             <input
@@ -60,7 +60,7 @@ Navbar.propTypes = {title : PropTypes.string.isRequired,
                     about : PropTypes.string };
 
 
-Navbar.defaultProps = {
-    title : "SetTitle",
-    about : "setAbout"
-}
+// Navbar.defaultProps = {
+//     title : "SetTitle",
+//     about : "setAbout"
+// }
